@@ -75,7 +75,7 @@ public class Scan_material_entrada extends AppCompatActivity {
         elementosFormato(precargado);
         listeners();
 
-        //Aviso sobre funcionamiento en horizontal
+        //Aviso sobre funcionamiento solo en horizontal
         Toast.makeText(this, "Opción sólo con pantalla horizontal", Toast.LENGTH_LONG).show();
 
     }
