@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="mx.tuprograma.tuinventario.Scan_material_entrada">
+
+    <ScrollView
+        android:id="@+id/scrollMain"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="20dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+
+
+            <TextView
+                android:id="@+id/textTitulo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="ENTRADA DE MATERIAL"
+                android:textSize="18dp"/>
+
+                <Button
+                    android:id="@+id/btnEscanear"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="left"
+                    android:text="Escanear"/>
+
+            <TextView
+                android:id="@+id/textMaterial"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:gravity="center"
+                android:textSize="15dp"/>
+
+
+            <LinearLayout
+            android:id="@+id/layoutRegistra"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="20dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+
+                <TextView
+                    android:id="@+id/textFechaIngreso"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Fecha de ingreso" />
+
+                <DatePicker
+                    android:id="@+id/fechaIngreso"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/date_picker_theme"
+                    android:padding="20dp" />
+
+                <!--android:datePickerMode="calendar"-->
+
+                <CheckBox
+                    android:id="@+id/checkCaducidad"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="¿Caducidad?"
+                    android:padding="20dp"/>
+
+                <DatePicker
+                    android:id="@+id/fechaCaducidad"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/date_picker_theme"
+                    android:padding="30dp"/>
+
+                <!--style="@style/date_picker_theme"-->
+
+            <TextView
+                android:id="@+id/textCantidad"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Cantidad" />
+
+            <EditText
+                android:id="@+id/cantidad"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:ems="10"
+                android:descendantFocusability="beforeDescendants"
+                android:focusableInTouchMode="true"
+                android:inputType="number" />
+
+                <TextView
+                    android:id="@+id/textCosto"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Costo por unidad" />
+
+                <EditText
+                    android:id="@+id/costo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:ems="10"
+                    android:inputType="number" />
+
+                <CheckBox
+                    android:id="@+id/checkIva"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="¿Contiene IVA?"
+                    android:checked="true"/>
+
+                <Button
+                    android:id="@+id/btnEnviar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Agregar" />
+
+        </LinearLayout>
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</android.widget.RelativeLayout>

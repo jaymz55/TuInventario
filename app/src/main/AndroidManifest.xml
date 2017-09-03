@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="mx.tuprograma.tuinventario">
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Base.Theme.AppCompat.Light">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Menu" />
+
+        <!-- Scan -->
+        <activity android:name=".Solicitudes" />
+        <activity
+            android:name=".solicitudNueva"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" />
+
+        <!-- Scan -->
+        <activity
+            android:name=".Scan_material_entrada"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="landscape" />
+        <activity android:name=".Scan_opciones" />
+        <activity
+            android:name=".Scan_material_alta"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="landscape" />
+        <activity android:name=".Scan_material_opciones"></activity>
+    </application>
+
+</manifest>
